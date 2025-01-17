@@ -1,6 +1,6 @@
 node{
   stage('SCM Checkout'){
-    git 'https://github.com/PhilaniAntony/jenkinswithmaven'
+    git branch: 'main', url: 'https://github.com/PhilaniAntony/jenkinswithmaven'
   }
   stage('Compile-Package'){
     sh 'mvn package'
