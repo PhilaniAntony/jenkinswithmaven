@@ -3,6 +3,6 @@ node{
     git branch: 'main', url: 'https://github.com/PhilaniAntony/jenkinswithmaven'
   }
   stage('Compile-Package'){
-    sh 'mvn package'
+    sh '/usr/local/opt/maven package'
   }
 }
